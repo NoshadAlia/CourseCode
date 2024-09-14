@@ -4,662 +4,603 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>MORENT</title>
+    <link rel="icon" href="./Images/logo.png">
+    <link rel="stylesheet" href="./style.css">
     <style>
-        body {
-            font-family: "DM Sans", system-ui;
-            font-optical-sizing: auto;
-            font-style: normal;
-        }
+        @media (min-width: 768px) {
+            .carousel-inner {
+                display: flex;
+            }
 
-        #Signup {
-            left: 0px;
-        }
-
-        #Login {
-            left: 350px;
-        }
-
-        #btn {
-            top: 0;
-            left: 0;
-            position: absolute;
-            width: 160px;
-            height: 100%;
-            border-bottom: 2px solid #2F1893;
-            transition: .5s;
+            .carousel-item {
+                margin-right: 0;
+                flex: 0 0 33.333333%;
+                display: block;
+            }
         }
     </style>
-    <title>Document</title>
 </head>
 
-<body class="text-white">
-    <!-- start div  -->
-    <section>
-        <div class="bg-cover bg-center w-full" style="background-image: url(./Images/img_01.jpg)">
-            <div class="w-full h-full bg-[#2e18936b]">
-                <!-- nev bare -->
-                <nav class="w-full overflow-hidden">
-                    <div class="w-screen pt-5 md:pt-8 flex justify-center items-center">
-                        <ul class="text-white flex w-full md:w-1/2 justify-around ps-5 pe-5 md:p-0">
-                            <li><a href="#" class="hover:text-gray-300">Home</a></li>
-                            <li><a href="#feature" class="hover:text-gray-300">Features</a></li>
-                            <li><a href="#Pricing" class="hover:text-gray-300">Pricing</a></li>
-                            <li><a href="#team" class="hover:text-gray-300">Blog</a></li>
-                            <li class="hidden md:block"><a href="" class="hover:text-gray-300"><ion-icon
-                                        name="logo-dribbble" class="h-8 w-5"></ion-icon></a></li>
-                            <li class="hidden md:block"><a href="" class="hover:text-gray-300"><ion-icon
-                                        name="logo-behance" class="h-8 w-5"></ion-icon></a></li>
-                        </ul>
+<body>
+    <div class="position-relative" style="width: 100%; height: 100%; background-color: #F6F7F9;">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top p-2">
+            <div class="container-fluid">
+                <a class="navbar-brand text-center fs-4 fw-bold text-primary" href="#">MORENT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex col-lg-6 col-md-8 col-sm-12 my-2 my-lg-0">
+                        <div class="input-group ms-5">
+                            <span class="input-group-text bg-white border-end-0 rounded-end rounded-pill" role="button">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </span>
+                            <input type="text" class="form-control border-start-0" placeholder="Search...">
+                            <span class="input-group-text bg-white border-start-0 rounded-pill rounded-start"
+                                role="button">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </span>
+                        </div>
+                    </form>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row align-items-center gap-3">
+                        <li class="d-flex nav-item border rounded-circle"
+                            style="width: 30px; height: 30px; align-items: center; justify-content: center;">
+                            <a class="nav-link" aria-current="page" href="#"><ion-icon
+                                    name="heart-sharp"></ion-icon></a>
+                        </li>
+                        <li class="d-flex nav-item border rounded-circle"
+                            style="width: 30px; height: 30px; align-items: center; justify-content: center;">
+                            <a class="nav-link" href="#"><ion-icon name="notifications-sharp"></ion-icon></a>
+                        </li>
+                        <li class="d-flex nav-item border rounded-circle"
+                            style="width: 30px; height: 30px; align-items: center; justify-content: center;">
+                            <a class="nav-link" href="#"><ion-icon name="settings-sharp"></ion-icon></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="./Images/Image.png" class="img-fluid rounded-circle"
+                                    style="width: 30px; height: 30px;">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mt-5 pt-3 container">
+            <div class="row mt-3">
+                <div class="col-md-6 mb-3">
+                    <img class="img-fluid" src="./Images/Ads 1.png" alt="">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <img class="img-fluid" src="./Images/BG2.png" alt="">
+                </div>
+            </div>
+            <div class="row mt-5 d-flex justify-content-center align-items-center">
+                <div class="col-md-5 bg-white rounded p-3 mb-3">
+                    <div class="d-flex align-items-center justify-content-evenly col-lg-3 col-5">
+                        <input type="radio" name="pick-up" id="pick-up" checked>
+                        <p class="fs-6 mt-3 fw-bold">Pick - Up</p>
                     </div>
-                </nav>
-                <!-- landing sliders  -->
-                <div class="w-full h-full flex flex-col items-center overflow-hidden lg:mt-10">
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <label for="locations" class="form-label fw-bold">Locations</label>
+                            <select name="locations" id="locations" class="form-select">
+                                <option value="0" selected>Select your city</option>
+                                <option value="01">Mohatta Palace</option>
+                                <option value="02">KMC Building</option>
+                                <option value="03">Frere Hall</option>
+                                <option value="04">Dolmen</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="date" class="form-label fw-bold">Date</label>
+                            <input type="date" name="date" id="date" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="time" class="form-label fw-bold">Time</label>
+                            <select name="time" id="time" class="form-select">
+                                <option value="0" selected>Select your time</option>
+                                <option value="01">2:00 pm/am</option>
+                                <option value="02">4:00 pm/am</option>
+                                <option value="03">6:00 pm/am</option>
+                                <option value="04">8:00 pm/am</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-1 d-flex justify-content-center align-items-center mb-3">
                     <div
-                        class="w-full ps-20 pe-20 flex justify-center md:space-x-56 items-center mt-16 overflow-hidden">
-                        <button class="hidden md:block hover:text-gray-500" onclick="plusSlides(-1)"><ion-icon
-                                name="chevron-back-outline"></ion-icon></button>
-                        <div class="text-center items-center flex flex-col">
-                            <h3 class="text-xl ">Startup 3</h3>
-                            <h1 class="text-3xl md:text-5xl font-bold text-nowrap mt-4 ms-5 me-5 md:ms-0 md:me-0">Forget
-                                About Code</h1>
-                            <p class="text-sm mt-6">Startup Framework gives you complete freedom over your creative <br>
-                                process — you don’t have
-                                to think about any technical aspects. <br> There are no limits and absolutely no coding.
-                            </p>
+                        style="width: 50px; height: 50px; background: #3563E9; display: flex; justify-content: center; align-items: center; border-radius: 10px; box-shadow: 0px 0px 15px 0px #7f8db9;">
+                        <ion-icon class="text-white fs-4" name="swap-vertical"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="col-md-5 bg-white rounded p-3 mb-3">
+                    <div class="d-flex align-items-center justify-content-evenly col-lg-3 col-5">
+                        <input type="radio" name="drop-off" id="drop-off" checked>
+                        <p class="fs-6 mt-3 fw-bold">Drop - Off</p>
+                    </div>
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <label for="locations" class="form-label fw-bold">Locations</label>
+                            <select name="locations" id="locations" class="form-select">
+                                <option value="0" selected>Select your city</option>
+                                <option value="01">Mohatta Palace</option>
+                                <option value="02">KMC Building</option>
+                                <option value="03">Frere Hall</option>
+                                <option value="04">Dolmen</option>
+                            </select>
                         </div>
-                        <button class="hidden md:block hover:text-gray-500"><ion-icon
-                                name="chevron-forward-outline"></ion-icon></button>
-                    </div>
-                    <div class="mt-8 overflow-hidden">
-                        <ion-icon name="ellipse-outline"
-                            class="text-white bg-white border-solid rounded-full"></ion-icon>
-                        <ion-icon name="ellipse-outline"
-                            class="hover:text-white hover:bg-white hover:border-solid hover:rounded-full"></ion-icon>
-                        <ion-icon name="ellipse-outline"
-                            class="hover:text-white hover:bg-white hover:border-solid hover:rounded-full"></ion-icon>
-                        <ion-icon name="ellipse-outline"
-                            class="hover:text-white hover:bg-white hover:border-solid hover:rounded-full"></ion-icon>
-                        <ion-icon name="ellipse-outline"
-                            class="hover:text-white hover:bg-white hover:border-solid hover:rounded-full"></ion-icon>
-                    </div>
-                    <button class="mt-5 mb-5 border-solid p-3 bg-[#2F1893] rounded-3xl"><a href="#"
-                            class="text-sm">Create an Account</a></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- contact section -->
-    <section>
-        <div class="bg-cover bg-center w-full h-screen" style="background-image: url(./Images/img_02.jpg)">
-            <div class="w-full h-full bg-[#2e18936b] flex justify-center items-center">
-                <div class="w-full text-center">
-                    <p class="text-lg">Free Sample</p>
-                    <h1 class="text-5xl mt-2 md:mt-10">Powerful Generator and Free <br class="mt-2 pt-2"> Figma Sources
-                    </h1>
-                    <p class="text-sm mt-2 md:mt-10 p-5 md:p-0">Startup Framework contains components and complex blocks
-                        which
-                        can easily be <br> integrated into
-                        almost any design. All of the components are made in the same style, and <br> can easily be
-                        integrated into projects, allowing you to create hundreds of solutions.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Feature section -->
-    <section id="feature">
-        <div class="bg-cover bg-center w-full h-screen" style="background-image: url(./Images/img_03.jpg)">
-            <div class="w-full h-full bg-[#2e18936b] p-10 md:p-0 md:flex justify-between items-center">
-                <img class="hidden md:block lg:w-[490px] lg:h-[400px] md:w[390px] md:h-[300px]"
-                    src="./Images/laptop.png" alt="">
-                <div class="md:w-[40%] md:-ml-24 w-full">
-                    <div class="-mt-10">
-                        <h1 class="text-4xl font-semibold">We Create Something New</h1>
-                        <p class="mt-3">We have created a new product that will help designers, <br> developers and
-                            companies create
-                            websites for their <br> startups quickly and easily.</p>
-                    </div>
-                    <div class="flex mt-3 md:mt-10 w-full gap-10">
-                        <div class="md:w-[40%]">
-                            <ion-icon name="copy-outline" class="font-extrabold text-2xl"></ion-icon>
-                            <p class="md:mt-5 md:mb-5 text-sm font-bold text-nowrap">30 New feature pages</p>
-                            <p class="text-sm">Startup Framework contains components and complex blocks which can
-                                easily. </p>
+                        <div class="col-md-4">
+                            <label for="date" class="form-label fw-bold">Date</label>
+                            <input type="date" name="date" id="date" class="form-control">
                         </div>
-                        <div class="md:w-[40%] hidden md:block">
-                            <ion-icon name="diamond-outline" class="font-extrabold text-2xl"></ion-icon>
-                            <p class="md:mt-5 md:mb-5 text-sm font-bold text-nowrap">Useful Symbol Components</p>
-                            <p class="text-sm">Samples will show you the feeling on how to play around using the
-                                components.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="md:flex md:flex-col me-24 justify-center mt-5 items-center hidden ">
-                    <ion-icon name="ellipse-outline" class="text-white bg-white border-solid rounded-full"></ion-icon>
-                    <ion-icon name="ellipse-outline"
-                        class="hover:text-white hover:bg-white hover:border-solid hover:rounded-full"></ion-icon>
-                    <ion-icon name="ellipse-outline"
-                        class="hover:text-white hover:bg-white hover:border-solid hover:rounded-full"></ion-icon>
-                    <ion-icon name="ellipse-outline"
-                        class="hover:text-white hover:bg-white hover:border-solid hover:rounded-full"></ion-icon>
-                    <ion-icon name="ellipse-outline"
-                        class="hover:text-white hover:bg-white hover:border-solid hover:rounded-full"></ion-icon>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- form section -->
-    <section>
-        <div class="bg-cover bg-center w-full h-full" style="background-image: url(./Images/img_02.jpg)">
-            <div
-                class="w-full h-full bg-[#2e18936b] flex justify-center items-center flex-col md:flex-row px-3 py-5 gap-32">
-                <div class="w-72">
-                    <h1 class="text-3xl font-bold">We solve digital problems with an outstanding creative flare</h1>
-                    <p class="mt-3 text-sm">We have created a new product that will help designers, developers and
-                        companies create websites for their startups quickly and easily.</p>
-                </div>
-                <div class="w-full md:w-80 h-[420px] bg-white rounded-lg text-black relative overflow-hidden">
-                    <div class="w-full drop-shadow-lg text-center ">
-                        <div id="btn"></div>
-                        <button type="button" class="py-3 bg-transparent pr-10" onclick="signupform()">Sign Up</button>
-                        <button type="button" class="py-3 bg-transparent pl-10" onclick="loginform()">LOGIN</button>
-                        <hr>
-                    </div>
-                    <form id="Signup"
-                        class="w-full input-group flex flex-col justify-center items-center mt-10 gap-3 absolute">
-                        <input type="text" placeholder="Your email"
-                            class="input-filed w-3/4 border border-solid rounded-full px-5 py-3 border-gray-600" required>
-                        <input type="password" placeholder="Your password"
-                            class="input-filed w-3/4 border border-solid rounded-full px-5 py-3 border-gray-600" required>
-                        <button type="submit" class="w-3/4 text-white bg-[#25DAC5] rounded-full py-2">Create an
-                            Account</button>
-                        <div class="flex mt-2 w-full justify-center items-center">
-                            <hr class="w-[30%] mr-2">or
-                            <hr class="w-[30%] ml-2">
-                        </div>
-                        <button type="button" class="w-3/4 text-white bg-[#1DA1F2] rounded-full py-2">Login via
-                            Twitter</button>
-                    </form>
-                    <form id="Login"
-                        class="input-group flex flex-col justify-center items-center mt-10 gap-3  absolute w-full">
-                        <input type="text" placeholder="Your email"
-                            class="input-filed w-3/4 border border-solid rounded-full px-5 py-3 border-gray-600" required>
-                        <input type="password" placeholder="Your password"
-                            class="input-filed w-3/4 border border-solid rounded-full px-5 py-3 border-gray-600" required>
-                        <p class="text-xs pl-3 text-start w-3/4 text-red-600 "><a href="#">Forget password</a></p>
-                        <button type="submit" class="w-3/4 text-white bg-blue-900 rounded-full py-2">Login
-                            Account</button>
-                        <div class="flex mt-2 w-full justify-center items-center">
-                            <hr class="w-[30%] mr-2">or
-                            <hr class="w-[30%] ml-2">
-                        </div>
-                        <button type="button" class="w-3/4 text-white bg-blue-600 rounded-full py-2">Login via
-                            Twitter</button>
-                    </form>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- testimonial section -->
-    <section>
-        <div class="w-full h-full bg-[#2F1893] p-10 flex flex-col justify-center items-center">
-            <div class="text-start w-3/4">
-                <p class="text-3xl font-bold">Our Happy Clients</p>
-            </div>
-            <div class="md:flex w-full md:justify-evenly p-6 gap-2 md:gap-0">
-                <div class="text-center md:flex p-5 border border-white border-solid gap-4 rounded-lg">
-                    <img class="w-16 h-[75px] mb-5 rounded-2xl" src="./Images/review01.png">
-                    <div class="text-start">
-                        <p>Get a fully retina ready site when <br> you build with Startup Framework. <br>Websites look
-                            sharper and more <br> gorgeous on devices with retina <br>display support</p>
-                        <p class="text-gray-500 mt-5">Rayhan Curran</p>
-                    </div>
-                </div>
-                <div class="text-center md:flex p-5 border border-white border-solid gap-4 rounded-lg mt-4 md:mt-0">
-                    <img class="w-16 h-[75px] mb-5 rounded-2xl" src="./Images/review02.png">
-                    <div class="text-start">
-                        <p>As a business targeting high net <br> worth individuals, we were looking <br> for a slick,
-                            cool and mini-malistic <br> design for our website</p>
-                        <p class="text-gray-500 mt-5">Mozart Project</p>
-                    </div>
-                </div>
-            </div>
-            <div class="md:flex w-full md:justify-evenly p-6 gap-2 md:gap-0 ">
-                <div class="text-center md:flex p-5 border border-white border-solid gap-4 rounded-lg">
-                    <img class="w-16 h-[75px] mb-5 rounded-2xl" src="./Images/review03.png">
-                    <div class="text-start">
-                        <p>The most important part of the <br>Startup Framework is the samples</p>
-                        <p class="text-gray-500 mt-5">Rayhan Curran</p>
-                    </div>
-                </div>
-                <div class="text-center md:flex p-5 border border-white border-solid gap-4 rounded-lg mt-4 md:mt-0">
-                    <img class="w-16 h-[75px] mb-5 rounded-2xl" src="./Images/review04.png">
-                    <div class="text-start">
-                        <p>As a business targeting high net <br> worth individuals, we were looking <br> for a slick,
-                            cool and mini-malistic <br> design for our website</p>
-                        <p class="">Mozart Project</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- call to action section  -->
-    <section>
-        <div class="bg-cover bg-center w-full h-screen" style="background-image: url(./Images/img_04.jpg)">
-            <div class="w-full h-full bg-[#2e18936b]">
-                <div class="w-full h-full text-center items-center flex flex-col justify-center ">
-                    <h1 class="text-5xl font-bold">Easy to setup.<br>Easy to maintain</h1>
-                    <p class="mt-10 mb-10">Bootstrap is a widely-used, sleek, intuitive and <br> powerful front-end
-                        framework for faster and
-                        <br>easier web development.
-                    </p>
-                    <div class="flex w-full justify-center gap-2">
-                        <button
-                            class="rounded-full w-10 h-10 bg-[#EA3223] hover:bg-white hover:text-[#EA3223]"><ion-icon
-                                class="mt-2 ms-1 font-bold text-xl" name="caret-forward-outline"></ion-icon></button>
-                        <button
-                            class="rounded-full w-[30%] md:w-[13%] h-10 bg-[#25DAC5] hover:bg-white hover:text-[#25DAC5]"><a
-                                class="ms-1 text-sm pe-2">Get
-                                Started</a></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- showcase section -->
-    <section>
-        <div class="w-full h-full bg-[#2F1893] md:p-3">
-            <div class="w-full h-full p-5 items-center flex flex-col justify-center">
-                <div class="md:p-10 md:flex justify-between md:w-9/12">
-                    <h1 class="text-3xl font-bold">Last works</h1>
-                    <button class="hidden md:block border border-solid border-white rounded-full text-sm p-3">View all
-                        Works</button>
-                </div>
-                <div class="md:flex md:w-[72%] w-full md:justify-between  gap-2 md:gap-0">
-                    <div class="md:w-[47%] h-1/2 text-center">
-                        <img class="w-full h-auto rounded-lg mb-5" src="./Images/work02.png">
-                        <p class="text-sm mb-3 font-bold">UI kit</p>
-                        <p class="text-lg font-bold">Mozart Project</p>
-                    </div>
-                    <div class="md:w-[47%] h-1/2 text-center">
-                        <img class="w-full h-auto rounded-lg mb-5" src="./Images/work01.png">
-                        <p class="text-sm mb-3 font-bold">Framework</p>
-                        <p class="text-lg font-bold">Startup Framework 2.0</p>
-                    </div>
-                </div>
-                <div class="md:flex md:w-[72%] w-full md:justify-between mt-8 gap-2 md:gap-0">
-                    <div class="md:w-[47%] h-1/2 text-center">
-                        <img class="w-full h-auto rounded-lg mb-5" src="./Images/work04.png">
-                        <p class="text-sm mb-3 font-bold">UI kit</p>
-                        <p class="text-lg font-bold">Mozart Project</p>
-                    </div>
-                    <div class="md:w-[47%] h-1/2 text-center">
-                        <img class="w-full h-auto rounded-lg mb-5" src="./Images/work03.png">
-                        <p class="text-sm mb-3 font-bold">Framework</p>
-                        <p class="text-lg font-bold">Startup Framework 2.0</p>
-                    </div>
-                </div>
-                <button class="md:hidden border border-solid border-white rounded-full text-sm p-3 mt-2">View all
-                    Works</button>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- team section  -->
-    <section id="team">
-        <div class="w-full h-full bg-[#2F1893] pt-12">
-            <!-- Heading and description -->
-            <div class="px-4 md:ml-16 md:w-1/2 w-full text-center md:text-start">
-                <h1 class="text-3xl font-bold text-white">Startup Crew</h1>
-                <p class="text-base mt-8 text-gray-200">
-                    The most important part of the Startup Framework is the samples. The
-                    <br class="hidden md:block"> samples form a set of 25 usable pages you can use as is or you can add
-                    <br class="hidden md:block"> new blocks from the UI Kit.
-                </p>
-            </div>
-    
-            <!-- Team profiles -->
-            <div class="md:pl-20 mt-10 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-24 pb-8">
-                <!-- Profile 1 -->
-                <div class="flex flex-col items-center md:items-start">
-                    <img class="w-16 h-16 rounded-full" src="./Images/review01.png" alt="Profile image of Leah Salomon">
-                    <p class="mt-3 font-bold text-white">Leah Salomon</p>
-                    <p class="text-sm my-2 text-gray-300">UI Designer</p>
-                    <div class="mt-2 flex gap-4">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                        <ion-icon name="logo-facebook"></ion-icon>
-                        <ion-icon name="logo-dribbble"></ion-icon>
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </div>
-                </div>
-    
-                <!-- Profile 2 -->
-                <div class="flex flex-col items-center md:items-start">
-                    <img class="w-16 h-16 rounded-full" src="./Images/review02.png" alt="Profile image of Colin Timmons">
-                    <p class="mt-3 font-bold text-white">Colin Timmons</p>
-                    <p class="text-sm my-2 text-gray-300">UX Designer</p>
-                    <div class="mt-2 flex gap-4">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                        <ion-icon name="logo-dribbble"></ion-icon>
-                    </div>
-                </div>
-    
-                <!-- Profile 3 -->
-                <div class="flex flex-col items-center md:items-start">
-                    <img class="w-16 h-16 rounded-full" src="./Images/review03.png" alt="Profile image of Miguel Osborne">
-                    <p class="mt-3 font-bold text-white">Miguel Osborne</p>
-                    <p class="text-sm my-2 text-gray-300">Front-end Developer</p>
-                    <div class="mt-2 flex gap-4">
-                        <ion-icon name="logo-skype"></ion-icon>
-                        <ion-icon name="logo-stencil"></ion-icon>
-                        <ion-icon name="logo-deviantart"></ion-icon>
-                    </div>
-                </div>
-    
-                <!-- Profile 4 -->
-                <div class="flex flex-col items-center md:items-start">
-                    <img class="w-16 h-16 rounded-full" src="./Images/review04.png" alt="Profile image of Taylor Simon">
-                    <p class="mt-3 font-bold text-white">Taylor Simon</p>
-                    <p class="text-sm my-2 text-gray-300">Product Manager</p>
-                    <div class="mt-2 flex gap-4">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </div>
-                </div>
-    
-                <!-- Profile 5 -->
-                <div class="flex flex-col items-center md:items-start">
-                    <img class="w-16 h-16 rounded-full" src="./Images/review02.png" alt="Profile image of Steven MacAlister">
-                    <p class="mt-3 font-bold text-white">Steven MacAlister</p>
-                    <p class="text-sm my-2 text-gray-300">Copywriter</p>
-                    <div class="mt-2 flex gap-4">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-    <!-- contact section -->
-    <section>
-        <div class="bg-cover bg-center w-full h-full" style="background-image: url(./Images/img_05.jpg)">
-            <div class="w-full h-full bg-[#2e18936b] md:flex justify-center items-center p-20">
-                <div class="w-full text-center md:text-start md:w-1/2">
-                    <div>
-                        <h1 class="text-3xl font-bold">Let’s Keep in Touch</h1>
-                        <p class="text-base mt-8">We have created a new product that <br>will help designers, developers
-                            and <br>companies create websites for their <br>startups quickly and easily.</p>
-                    </div>
-                    <div class="mt-10">
-                        <ul class="flex flex-col gap-4 justify-around">
-                            <li class="flex flex-col md:flex-row md:text-start items-center gap-2"><ion-icon
-                                    name="call"></ion-icon>
-                                <p>+923202582507</p>
-                            </li>
-                            <li class="flex flex-col md:flex-row md:text-start items-center gap-2"><ion-icon
-                                    name="mail"></ion-icon>
-                                <p>noshadali85200@gmail.com</p>
-                            </li>
-                            <li class="flex flex-col md:flex-row md:text-start items-center md:items-start gap-2">
-                                <ion-icon name="business"></ion-icon>
-                                <p>San Francisco, CA560 Bush St & <br>20th Ave, Apt5 San Francisco,<br> 230909</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="md:w-[40%] bg-white h-full p-5 rounded-xl hidden md:block">
-                    <form class="text-black w-full">
-                        <div class="md:flex w-full md:justify-center md:items-center gap-8">
-                            <div class="w-1/2">
-                                <label for="name" >YOUR NAME</label><br>
-                                <input class="border border-solid border-gray-600 rounded-full ps-3 py-2 w-48" type="text" id="name" placeholder="YOUR NAME">
-                            </div>
-                            <div class="w-1/2">
-                                <label for="price">BUDGET</label><br>
-                                <select class="border border-solid border-gray-600 rounded-full ps-3 py-2 w-32" name="price" id="price" required>
-                                    <option value="01">$500</option>
-                                    <option value="02">$800</option>
-                                    <option value="03">$1000</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="mt-5">
-                            <label for="email">INPUT FIELD</label><br>
-                            <input class="w-[85%] border border-solid border-gray-600 rounded-full ps-3 py-2" type="email" name="email" id="email" placeholder="name@mail.com" required>
-                        </div>
-                        <div class="mt-5">
-                            <label for="message">YOUR MESSAGE</label><br>
-                            <textarea class="w-[85%] border border-solid border-gray-600 rounded-md col-span-6 ps-3 py-2" name="message" id="message" placeholder="MESSAGE" required></textarea>
-                        </div>
-                        <div class="md:flex justify-between mt-4 w-[85%] items-center">
-                            <div>
-                                <input type="checkbox" name="send" id="send" class="accent-[#25DAC5]" required>
-                                <label for="send">Send me a copy</label>
-                            </div>
-                            <div>
-                                <button type="submit" class="border border-solid rounded-full bg-[#25DAC5] w-24 px-3 py-2">Send</button>
-                            </div>
+                        <div class="col-md-4">
+                            <label for="time" class="form-label fw-bold">Time</label>
+                            <select name="time" id="time" class="form-select">
+                                <option value="0" selected>Select your time</option>
+                                <option value="01">2:00 pm/am</option>
+                                <option value="02">4:00 pm/am</option>
+                                <option value="03">6:00 pm/am</option>
+                                <option value="04">8:00 pm/am</option>
+                            </select>
                         </div>
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Pricing section -->
-    <section id="Pricing">
-        <div class="bg-cover bg-center w-full " style="background-image: url(./Images/img_06.jpg)">
-            <div class="w-full  bg-[#2e18936b]">
-                <div class="w-full text-center pt-8">
-                    <h1 class="text-5xl">Plans & Pricing</h1>
-                    <p class="text-base mt-3">Startup Framework is free forever — you only pay for <br> custom domain
-                        hosting or to export your
-                        site.</p>
+            <!-- Popular cars -->
+            <div class="row mt-4">
+                <div class="col-12 d-flex justify-content-between">
+                    <p class="fs-6" style="color: #90A3BF;">Popular Car</p>
+                    <a href="#" class="text-decoration-none">View All</a>
                 </div>
-                <div class="w-full md:flex gap-5 mt-10 justify-center h-full p-5">
-                    <div
-                        class="border border-solid border-white  rounded-md md:w-[26%]  h-1/2 ps-10 pt-9 items-center mb-5">
-                        <p class="text-base">Starter</p>
-                        <h1 class="mt-5 mb-5 text-4xl font-bold">9.99 <sup class="text-sm font-normal -mt-5">$</sup>
-                        </h1>
-                        <div>
-                            <ul class="flex flex-col gap-2">
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>14 days of backups</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>2 GB of space</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>Social integrations</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>Client billing</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2">
-                                    <p class="ms-6">Remote access</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2">
-                                    <p class="ms-6">Custom domain</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2">
-                                    <p class="ms-6">24 hours support</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2">
-                                    <p class="ms-6">Admin tools</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2">
-                                    <p class="ms-6">Collaboration tools</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2">
-                                    <p class="ms-6">User management</p>
-                                </li>
-                            </ul>
+                <div class="row g-4 cars-container">
+                    <!-- Car 1 -->
+                    <div class="col-md-3">
+                        <div class="card p-3 h-100">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="cars-name">
+                                    <h5 class="mb-0">Lamborghini</h5>
+                                    <p class="text-muted mb-0">Sport</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#like"><i class="fa-solid fa-heart fa-xl text-danger"></i></a>
+                                </div>
+                            </div>
+                            <div class="car-img text-center my-4">
+                                <img src="./Images/cars/car-1.png" alt="lamborghini aventador" class="img-fluid">
+                            </div>
+                            <div class="cars-info d-flex justify-content-evenly gap-3 mb-3 col-12">
+                                <div><i class="fa-solid fa-gas-pump"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">90L</span></div>
+                                <div><i class="fa-solid fa-gear"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">Manual</span></div>
+                                <div><i class="fa-solid fa-user-group"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">2 People</span></div>
+                            </div>
+                            <div class="price d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">$99.00/day</span>
+                                <a href="#" class="btn btn-primary">Rent Now</a>
+                            </div>
                         </div>
-                        <button
-                            class="mt-7 border border-solid border-white rounded-full w-[65%] p-2 mb-5 hover:border-none hover:bg-[#E93A7D]"><a
-                                href="#">Get Started</a></button>
+
                     </div>
-                    <div
-                        class="border border-solid border-white  rounded-md md:w-[26%]  h-1/2 ps-10 pt-9 items-center mb-5">
-                        <p class="text-base">Professional</p>
-                        <h1 class="mt-5 mb-5 text-4xl font-bold">19.99 <sup class="text-sm font-normal -mt-5">$</sup>
-                        </h1>
-                        <div>
-                            <ul class="flex flex-col gap-2">
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>14 days of backups</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>2 GB of space</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>Social integrations</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>Client billing</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>Remote access</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>Custom domain</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>24 hours support</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2">
-                                    <p class="ms-6">Admin tools</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2">
-                                    <p class="ms-6">Collaboration tools</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2">
-                                    <p class="ms-6">User management</p>
-                                </li>
-                            </ul>
+
+                    <!-- Car 2 -->
+                    <div class="col-md-3">
+                        <div class="card p-3 h-100">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="cars-name">
+                                    <h5 class="mb-0">Nissan GT - R</h5>
+                                    <p class="text-muted mb-0">Sport</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#like"><i class="fa-regular fa-heart text-black fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="car-img text-center my-4">
+                                <img src="./Images/cars/car-2.png" alt="lamborghini aventador" class="img-fluid">
+                            </div>
+                            <div class="cars-info d-flex justify-content-evenly gap-3 mb-3 col-12">
+                                <div><i class="fa-solid fa-gas-pump"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">80L</span></div>
+                                <div><i class="fa-solid fa-gear"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">Manual</span></div>
+                                <div><i class="fa-solid fa-user-group"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">2 People</span></div>
+                            </div>
+                            <div class="price d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">$96.00/day</span>
+                                <a href="#" class="btn btn-primary">Rent Now</a>
+                            </div>
                         </div>
-                        <button class="bg-[#E93A7D] mt-7 rounded-full w-[65%] p-2 mb-5"><a href="#">Get
-                                Started</a></button>
+
                     </div>
-                    <div
-                        class="border border-solid border-white  rounded-md md:w-[26%]  h-1/2 ps-10 pt-9 items-center mb-5">
-                        <p class="text-base">Team</p>
-                        <h1 class="mt-5 mb-5 text-4xl font-bold flex  items-center">49.99 <sup
-                                class="text-sm font-normal -mt-3 ml-2">$</sup></h1>
-                        <div>
-                            <ul class="flex flex-col gap-2">
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>14 days of backups</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>2 GB of space</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>Social integrations</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>Client billing</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>Remote access</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>Custom domain</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>24 hours support</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>Admin tools</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>Collaboration tools</p>
-                                </li>
-                                <li class="flex text-start items-center gap-2"><ion-icon name="checkmark-outline"
-                                        class="text-green-500"></ion-icon>
-                                    <p>User management</p>
-                                </li>
-                            </ul>
+                    <!-- Car 3 -->
+                    <div class="col-md-3">
+                        <div class="card p-3 h-100">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="cars-name">
+                                    <h5 class="mb-0">Rolls - Royce</h5>
+                                    <p class="text-muted mb-0">Sport</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#like"><i class="fa-solid fa-heart fa-xl text-danger"></i></a>
+                                </div>
+                            </div>
+                            <div class="car-img text-center my-4">
+                                <img src="./Images/cars/Car-3.png" alt="lamborghini aventador" class="img-fluid">
+                            </div>
+                            <div class="cars-info d-flex justify-content-evenly gap-3 mb-3 col-12">
+                                <div><i class="fa-solid fa-gas-pump"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">70L</span></div>
+                                <div><i class="fa-solid fa-gear"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">Manual</span></div>
+                                <div><i class="fa-solid fa-user-group"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">4People</span></div>
+                            </div>
+                            <div class="price d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">$80.00/day</span>
+                                <a href="#" class="btn btn-primary">Rent Now</a>
+                            </div>
                         </div>
-                        <button
-                            class="mt-7 border border-solid border-white rounded-full w-[65%] p-2 mb-5 hover:border-none hover:bg-[#E93A7D]"><a
-                                href="#">Get Started</a></button>
+
+                    </div>
+                    <!-- Car 4 -->
+                    <div class="col-md-3">
+                        <div class="card p-3 h-100">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="cars-name">
+                                    <h5 class="mb-0">Nissan GT - R</h5>
+                                    <p class="text-muted mb-0">Sport</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#like"><i class="fa-regular fa-heart text-black fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="car-img text-center my-4">
+                                <img src="./Images/cars/Car-4.png" alt="lamborghini aventador" class="img-fluid">
+                            </div>
+                            <div class="cars-info d-flex justify-content-evenly gap-3 mb-3 col-12">
+                                <div><i class="fa-solid fa-gas-pump"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">80L</span></div>
+                                <div><i class="fa-solid fa-gear"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">Manual</span></div>
+                                <div><i class="fa-solid fa-user-group"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">2People</span></div>
+                            </div>
+                            <div class="price d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">$90.00/day</span>
+                                <a href="#" class="btn btn-primary">Rent Now</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <!-- All cars-container -->
+            <div class="row mt-4">
+                <div class="col-12 d-flex justify-content-between">
+                    <p class="fs-6" style="color: #90A3BF;">Recomendation Car</p>
+                </div>
+                <div class="row g-4 cars-container">
+                    <!-- Car 5 -->
+                    <div class="col-md-3">
+                        <div class="card p-3 h-100">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="cars-name">
+                                    <h5 class="mb-0">Lamborghini</h5>
+                                    <p class="text-muted mb-0">Sport</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#like"><i class="fa-solid fa-heart fa-xl text-danger"></i></a>
+                                </div>
+                            </div>
+                            <div class="car-img text-center my-4">
+                                <img src="./Images/cars/Car-5.png" alt="lamborghini aventador" class="img-fluid">
+                            </div>
+                            <div class="cars-info d-flex justify-content-evenly gap-3 mb-3 col-12">
+                                <div><i class="fa-solid fa-gas-pump"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">55 L</span></div>
+                                <div><i class="fa-solid fa-gear"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">Manual</span></div>
+                                <div><i class="fa-solid fa-user-group"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">2 People</span></div>
+                            </div>
+                            <div class="price d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">$99.00/day</span>
+                                <a href="#" class="btn btn-primary">Rent Now</a>
+                            </div>
+                        </div>
 
-    <!-- footer start -->
-    <footer class="bg-[#2F1893] w-full " id="footer">
-        <div
-            class="justify-center items-center flex-col flex md:flex-row md:justify-between md:ps-16 md:pr-16 pt-10 p-3 ">
-            <p class="font-bold cursor-pointer hover:text-gray-400">Startup 3</p>
-            <div class="mt-4 md:mt-0">
-                <ul class="flex gap-5 text-sm">
-                    <li><a href="#" class="hover:text-gray-400">Privacy Policy</a></li>
-                    <li><a href="#" class="hover:text-gray-400">Terms</a></li>
-                    <li><a href="#" class="hover:text-gray-400"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    <li><a href="#" class="hover:text-gray-400"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                    <li><a href="#" class="hover:text-gray-400"><ion-icon name="logo-google"></ion-icon></a></li>
-                </ul>
+                    </div>
+
+                    <!-- Car 6 -->
+                    <div class="col-md-3">
+                        <div class="card p-3 h-100">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="cars-name">
+                                    <h5 class="mb-0">Lamborghini</h5>
+                                    <p class="text-muted mb-0">Sport</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#like"><i class="fa-regular fa-heart text-black fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="car-img text-center my-4">
+                                <img src="./Images/cars/Car-6.png" alt="lamborghini aventador" class="img-fluid">
+                            </div>
+                            <div class="cars-info d-flex justify-content-evenly gap-3 mb-3 col-12">
+                                <div><i class="fa-solid fa-gas-pump"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">55 L</span></div>
+                                <div><i class="fa-solid fa-gear"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">Manual</span></div>
+                                <div><i class="fa-solid fa-user-group"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">2 People</span></div>
+                            </div>
+                            <div class="price d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">$99.00/day</span>
+                                <a href="#" class="btn btn-primary">Rent Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Car 7 -->
+                    <div class="col-md-3">
+                        <div class="card p-3 h-100">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="cars-name">
+                                    <h5 class="mb-0">Lamborghini</h5>
+                                    <p class="text-muted mb-0">Sport</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#like"><i class="fa-regular fa-heart text-black fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="car-img text-center my-4">
+                                <img src="./Images/cars/Car-7.png" alt="lamborghini aventador" class="img-fluid">
+                            </div>
+                            <div class="cars-info d-flex justify-content-evenly gap-3 mb-3 col-12">
+                                <div><i class="fa-solid fa-gas-pump"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">55 L</span></div>
+                                <div><i class="fa-solid fa-gear"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">Manual</span></div>
+                                <div><i class="fa-solid fa-user-group"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">2 People</span></div>
+                            </div>
+                            <div class="price d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">$99.00/day</span>
+                                <a href="#" class="btn btn-primary">Rent Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Car 8 -->
+                    <div class="col-md-3">
+                        <div class="card p-3 h-100">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="cars-name">
+                                    <h5 class="mb-0">Lamborghini</h5>
+                                    <p class="text-muted mb-0">Sport</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#like"><i class="fa-solid fa-heart fa-xl text-danger"></i></a>
+                                </div>
+                            </div>
+                            <div class="car-img text-center my-4">
+                                <img src="./Images/cars/Car-8.png" alt="lamborghini aventador" class="img-fluid">
+                            </div>
+                            <div class="cars-info d-flex justify-content-evenly gap-3 mb-3 col-12">
+                                <div><i class="fa-solid fa-gas-pump"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">55 L</span></div>
+                                <div><i class="fa-solid fa-gear"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">Manual</span></div>
+                                <div><i class="fa-solid fa-user-group"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">2 People</span></div>
+                            </div>
+                            <div class="price d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">$99.00/day</span>
+                                <a href="#" class="btn btn-primary">Rent Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row g-4 cars-container"></div>
+                    <!-- Car 9 -->
+                    <div class="col-md-3">
+                        <div class="card p-3 h-100">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="cars-name">
+                                    <h5 class="mb-0">Lamborghini</h5>
+                                    <p class="text-muted mb-0">Sport</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#like"><i class="fa-regular fa-heart text-black fa-xl "></i></a>
+                                </div>
+                            </div>
+                            <div class="car-img text-center my-4">
+                                <img src="./Images/cars/Car-9.png" alt="lamborghini aventador" class="img-fluid">
+                            </div>
+                            <div class="cars-info d-flex justify-content-evenly gap-3 mb-3 col-12">
+                                <div><i class="fa-solid fa-gas-pump"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">55 L</span></div>
+                                <div><i class="fa-solid fa-gear"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">Manual</span></div>
+                                <div><i class="fa-solid fa-user-group"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">2 People</span></div>
+                            </div>
+                            <div class="price d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">$99.00/day</span>
+                                <a href="#" class="btn btn-primary">Rent Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Car 10 -->
+                    <div class="col-md-3">
+                        <div class="card p-3 h-100">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="cars-name">
+                                    <h5 class="mb-0">Lamborghini</h5>
+                                    <p class="text-muted mb-0">Sport</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#like"><i class="fa-regular fa-heart text-black fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="car-img text-center my-4">
+                                <img src="./Images/cars/Car-10.png" alt="lamborghini aventador" class="img-fluid">
+                            </div>
+                            <div class="cars-info d-flex justify-content-evenly gap-3 mb-3 col-12">
+                                <div><i class="fa-solid fa-gas-pump"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">55 L</span></div>
+                                <div><i class="fa-solid fa-gear"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">Manual</span></div>
+                                <div><i class="fa-solid fa-user-group"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">2 People</span></div>
+                            </div>
+                            <div class="price d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">$99.00/day</span>
+                                <a href="#" class="btn btn-primary">Rent Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Car 11 -->
+                    <div class="col-md-3">
+                        <div class="card p-3 h-100">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="cars-name">
+                                    <h5 class="mb-0">Lamborghini</h5>
+                                    <p class="text-muted mb-0">Sport</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#like"><i class="fa-solid fa-heart fa-xl text-danger"></i></a>
+                                </div>
+                            </div>
+                            <div class="car-img text-center my-4">
+                                <img src="./Images/cars/Car-11.png" alt="lamborghini aventador" class="img-fluid">
+                            </div>
+                            <div class="cars-info d-flex justify-content-evenly gap-3 mb-3 col-12">
+                                <div><i class="fa-solid fa-gas-pump"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">55 L</span></div>
+                                <div><i class="fa-solid fa-gear"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">Manual</span></div>
+                                <div><i class="fa-solid fa-user-group"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">2 People</span></div>
+                            </div>
+                            <div class="price d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">$99.00/day</span>
+                                <a href="#" class="btn btn-primary">Rent Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Car 12 -->
+                    <div class="col-md-3">
+                        <div class="card p-3 h-100">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="cars-name">
+                                    <h5 class="mb-0">Lamborghini</h5>
+                                    <p class="text-muted mb-0">Sport</p>
+                                </div>
+                                <div class="like">
+                                    <a href="#like"><i class="fa-regular fa-heart text-black fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="car-img text-center my-4">
+                                <img src="./Images/cars/Car-12.png" alt="lamborghini aventador" class="img-fluid">
+                            </div>
+                            <div class="cars-info d-flex justify-content-evenly gap-3 mb-3 col-12">
+                                <div><i class="fa-solid fa-gas-pump"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">55 L</span></div>
+                                <div><i class="fa-solid fa-gear"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">Manual</span></div>
+                                <div><i class="fa-solid fa-user-group"></i><span class="ms-1 text-secondary fw-bold"
+                                        style="font-size: x-small;">2 People</span></div>
+                            </div>
+                            <div class="price d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">$99.00/day</span>
+                                <a href="#" class="btn btn-primary">Rent Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container my-5 mx-5">
+                <div class="row mb-5 d-flex  justify-content-end ps-5 pb-4">
+                    
+                    <div class="price d-flex justify-content-evenly align-items-center">
+                        <a href="#" class="btn btn-primary col-2 ms-5">Show more car</a>
+                        
+                    </div>
+                </div>
             </div>
         </div>
-        <hr class="md:ml-14 md:me-14 md:mt-5">
-        <div class="justify-center items-center flex-col flex md:flex-row md:justify-between md:ps-16 md:pr-16 p-3 ">
-            <div class="mt-4">
-                <ul class="flex gap-5 text-sm">
-                    <li><a href="#" class="hover:text-gray-400">Tour</a></li>
-                    <li><a href="#" class="hover:text-gray-400">Features</a></li>
-                    <li><a href="#" class="hover:text-gray-400">Pricing Plans</a></li>
-                    <li><a href="#" class="hover:text-gray-400">Brands</a></li>
-                    <li><a href="#" class="hover:text-gray-400">Contacts</a></li>
-                </ul>
+    </div>
+    <footer class="bg-white p-5">
+        <div class="col-12 d-flex mb-5">
+            <div class="col-5">
+                <h1 style="color: #3563E9;">MORENT</h1>
+                <p>Our vision is to provide convenience <br>and help increase your sales business.</p>
             </div>
-            <p class="mt-5 md:mt-0">© 2017 Designmodo. All rights reserved.</p>
+            <div class="d-flex justify-content-evenly col-6 ms-5 ps-5 ">
+                <div>
+                    <p class="fw-bold">About</p>
+                    <ul class="navbar-nav gap-3">
+                        <li><a href="#" class="text-decoration-none text-secondary">How it works</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Featured</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Partnership</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Bussiness Relation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="fw-bold">Community</p>
+                    <ul class="navbar-nav gap-3">
+                        <li><a href="#" class="text-decoration-none text-secondary">Events</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Blog</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary"> Podcast</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Invite a friend</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="fw-bold">Socials</p>
+                    <ul class="navbar-nav gap-3">
+                        <li><a href="#" class="text-decoration-none text-secondary">Discord</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Instagram</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Twitter</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="col-12 d-flex justify-content-between mt-4">
+            <p>©2022 MORENT. All rights reserved</p>
+            <div class="d-flex gap-5 fw-bold">
+                <a href="#" class="text-black text-decoration-none">Privacy & Policy</a>
+                <a href="#" class="text-black text-decoration-none">Terms & Condition</a>
+            </div>
         </div>
     </footer>
-    <!-- script section  -->
-    <!-- font script -->
+    </div>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="./Script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
