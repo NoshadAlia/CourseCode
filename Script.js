@@ -1,15 +1,17 @@
-let x = document.getElementById("Signup");
-let y = document.getElementById("Login");
-let z = document.getElementById("btn");
-
-function loginform(){
-    x.style.left = "-400px";
-    y.style.left = "0px";
-    z.style.left = "160px";
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
 }
 
-function signupform(){
-    x.style.left = "0px";
-    y.style.left = "400px";
-    z.style.left = "0px";
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+        // var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
 }
